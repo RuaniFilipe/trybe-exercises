@@ -9,8 +9,7 @@
             
 ### disponível em: https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.1/index.html
 
-## Exercícios bloco 3, dia 2 disponíveis em: 
-
+## Exercícios bloco 3, dia 2
   Parte 1: 
   Objetivo: 1) Modificar o tamanho do h1 para 65px
             2) Modificar a cor do texto h1 para laranja
