@@ -15,7 +15,7 @@
   Objetivo: 1) Modificar o tamanho do h1 para 65px
             2) Modificar a cor do texto h1 para laranja
             3) Modificar a cor de fundo da lista não ordenada
-            4) Criar uma classe para modificar ao mesmo tempo a cor de fundo <p> e <ul>
+            4) Criar uma classe para modificar ao mesmo tempo a cor de fundo do parágrafo e da lista não ordenada
   
   ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.2/parte1.html
     
