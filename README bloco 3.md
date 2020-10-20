@@ -33,3 +33,14 @@
   Objetivo: 1) Criar um arquivo css externo
   
   ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.2/parte3.html
+  
+  ## Exercícios bloco 3, dia 3
+  
+  Desafio 1: Acrescentar bordas, margin e padding
+  ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.3/desafio1.html
+  
+  Desafio 2: Posicionar a criatura e a saudação em cima do planeta
+  ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.3/desafio2.html
+  
+  Desafio 3: Criar barra lateral e usar as separações de espaços
+  ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.3/desafio3.html
