@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+body {
+    background: linear-gradient(5deg,#8eeafa 35%, #369999 70%);
+}
+
+.mw {
+    width: 100vw;
+    height: 75vh;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;    
+}
