@@ -1,7 +1,7 @@
-let preco = 300;
-let imposto = (preco * 20)/100;
-let custoProduto = preco + imposto;
-let valorVenda = 200;
+let custoInicial = 300;
+let imposto = (custoInicial * 20)/100;
+let custoProduto = custoInicial + imposto;
+let valorVenda = 400;
 
 let lucro = valorVenda - custoProduto
 

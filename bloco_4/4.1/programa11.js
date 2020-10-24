@@ -14,8 +14,6 @@ if (salarioBruto <= 1556.94){
 }
 
 salario_Base = salarioBruto - aliquota_INSS
-console.log(salario_Base)
-
 
 if (salario_Base <= 1903.98){
     aliquota_IR = 0

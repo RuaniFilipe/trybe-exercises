@@ -1,4 +1,4 @@
-let nota = 95;
+let nota = 101;
 
 if (nota >= 0 && nota < 50){
     console.log("F");    
