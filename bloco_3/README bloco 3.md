@@ -36,6 +36,7 @@
   
   ## Exercícios bloco 3, dia 3
   
+  Parte 1
   Desafio 1: Acrescentar bordas, margin e padding
   ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.3/desafio1.html
   
@@ -44,3 +45,5 @@
   
   Desafio 3: Criar barra lateral e usar as separações de espaços
   ### disponível em https://ruanifilipe.github.io/trybe-exercises/bloco_3/3.3/desafio3.html
+  
+  
