@@ -1,0 +1,50 @@
+body {
+  font-size: 16px;
+  margin: 15px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 30px;
+}
+
+@media (min-width: 616px) {
+  body {
+  background-color: aqua;
+  margin: 0 auto;
+  }
+  h1{
+    font-size: clamp(7vw, 9vw, 10vw);
+  }
+  p {
+    font-size: clamp(2vw, 3vw, 5vw);
+  }
+  div{
+    display: flex;
+    flex-flow: row wrap;   
+  }
+}
+@media (min-width: 1033px) {
+  body {
+    background-color: green;
+    margin: 50px;
+  }
+  
+  h1 {
+    font-size: clamp(8vw, 10vw, 12vw);
+  }
+
+  p {
+    font-size: clamp(2vw, 3vw, 4vw);
+  }
+}
