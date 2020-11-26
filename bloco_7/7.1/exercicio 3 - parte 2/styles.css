@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(12deg, #3b5998 1%, #fff 99%);
+}
+
+button {
+  border-radius: 50%;  
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ffffff;
+  background-color: rgb(36, 36, 138);  
+  outline-style: none;
+  color: #FF0;
+  font-weight: bold;
+}
+
+div {
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+}
