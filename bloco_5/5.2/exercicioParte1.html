@@ -8,6 +8,7 @@
   <body>
     <div id="paiDoPai">
       <div id="pai">
+        Oi, eu sou o Pai
         <div id="primeiroFilho"></div>
         <div id="elementoOndeVoceEsta">
           <div id="primeiroFilhoDoFilho"></div>
@@ -18,5 +19,18 @@
         <div id="quartoEUltimoFilho"></div>
       </div>
     </div>
+    <script>
+      let here = document.querySelector("#elementoOndeVoceEsta");
+      let dad = document.querySelector("#elementoOndeVoceEsta").parentNode;
+      dad.style.color = "red";
+      let sonOfSon = document.querySelector("#primeiroFilhoDoFilho");
+      sonOfSon.innerHTML = "Oi, sou o primeiro filho do filho";
+      document.querySelector("#pai").firstElementChild
+      document.querySelector("#pai").firstElementChild
+      document.querySelector("#elementoOndeVoceEsta").previousSibling
+      document.querySelector("#elementoOndeVoceEsta").nextSibling
+      document.querySelector("#elementoOndeVoceEsta").nextElementSibling
+      document.querySelector("#pai").children[2]
+      </script>
   </body>
 </html>
