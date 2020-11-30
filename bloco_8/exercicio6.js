@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 const books = [
   {
     id: 1,
@@ -62,11 +63,14 @@ const books = [
     releaseYear: 1928,
   },
 ];
-function authorBornIn1947() {
-  const nomeAutor = books.find((element) => element.author.birthYear == 1947);
-  {
-    return nomeAutor.author.name;
-  }
+
+const expected_result = true;
+
+function someBookWasReleaseOnThe80s() {
+  const retorno = books.some(
+    (book) => book.releaseYear >= 1980 && book.releaseYear < 1990
+  );
+  return retorno;
 }
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+assert.equal(someBookWasReleaseOnThe80s(), expected_result);

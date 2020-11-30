@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 const books = [
   {
     id: 1,
@@ -63,13 +64,9 @@ const books = [
   },
 ];
 
-const expected_result = true;
-
-function someBookWasReleaseOnThe80s() {
-  const retorno = books.some(
-    (book) => book.releaseYear >= 1980 && book.releaseYear < 1990
-  );
-  return retorno;
+function smallerName() {
+  const retorno = books.sort((a, b) => a.name.length - b.name.length);
+  return retorno[0].name;
 }
 
-assert.equal(someBookWasReleaseOnThe80s(), expected_result);
+assert.equal(smallerName(), 'Duna');
