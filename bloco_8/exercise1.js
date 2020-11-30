@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -62,12 +62,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-
-const expected_result = true
-
-function someBookWasReleaseOnThe80s() {
-  const retorno = books.some(book => book.releaseYear >= 1980 && book.releaseYear < 1990)
-  return retorno
+function authorBornIn1947() {
+  const nomeAutor = books.find((element) => element.author.birthYear == 1947);
+  {
+    return nomeAutor.author.name;
+  }
 }
 
-assert.equal(someBookWasReleaseOnThe80s(), expected_result);
+assert.equal(authorBornIn1947(), 'Stephen King');

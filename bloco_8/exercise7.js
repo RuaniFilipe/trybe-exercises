@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -63,10 +63,18 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {  
-    const nomeAutor = books.find((element) => element.author.birthYear == 1947);{
-      return nomeAutor.author.name
+const expected_result = false;
+
+function authorUnique() {
+  const retorno = books.sort((a, b) => a.author.birthYear - b.author.birthYear);
+  for (let contador = 0; contador < retorno.length-1; contador +=1){
+    if (retorno[contador].author.birthYear === retorno[contador+1].author.birthYear) {
+      return false
+    } 
   }
+  
 }
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+authorUnique();
+
+assert.equal(authorUnique(), expected_result);

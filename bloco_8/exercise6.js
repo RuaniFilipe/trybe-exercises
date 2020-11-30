@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -63,17 +63,13 @@ const books = [
   },
 ];
 
-const expected_result = false;
+const expected_result = true;
 
-function authorUnique() {  
-  const retorno = books.sort((a, b) => a.author.birthYear - b.author.birthYear);
-  retorno.forEach((elemento, index) => {if(elemento.author.birthYear[index] === elemento.author.birthYear[index+1]){
-    return false
-  } else {
-    return true
-  }
-})
+function someBookWasReleaseOnThe80s() {
+  const retorno = books.some(
+    (book) => book.releaseYear >= 1980 && book.releaseYear < 1990
+  );
+  return retorno;
 }
-authorUnique()
 
-// assert.equal(authorUnique(), expected_result);
+assert.equal(someBookWasReleaseOnThe80s(), expected_result);

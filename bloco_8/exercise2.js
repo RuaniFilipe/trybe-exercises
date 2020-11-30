@@ -7,7 +7,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'George R. R. Martin',
-      birthYear: 1948
+      birthYear: 1948,
     },
     releaseYear: 1991,
   },
@@ -47,7 +47,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947
+      birthYear: 1947,
     },
     releaseYear: 1986,
   },
@@ -63,15 +63,9 @@ const books = [
   },
 ];
 
-const expected_result = false
-
-function everyoneWasBornOnSecXX() {
-  const retorno = books.every(elem => elem.author.birthYear >= 1901 && elem.author.birthYear <= 2000)
-  return retorno
+function smallerName() {
+  const retorno = books.sort((a, b) => a.name.length - b.name.length);
+  return retorno[0].name;
 }
-  
 
-  // escreva seu código aqui
-
-
-assert.equal(everyoneWasBornOnSecXX(), expected_result);
+assert.equal(smallerName(), 'Duna');
