@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 const books = [
   {
     id: 1,
@@ -62,10 +63,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-
-function smallerName() {
-  const retorno = books.sort((a, b) => a.name.length - b.name.length);
-  return retorno[0].name;
+function authorBornIn1947() {
+  const nomeAutor = books.find((element) => element.author.birthYear == 1947);
+  {
+    return nomeAutor.author.name;
+  }
 }
 
-assert.equal(smallerName(), 'Duna');
+assert.equal(authorBornIn1947(), 'Stephen King');

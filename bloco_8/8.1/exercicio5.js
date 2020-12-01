@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 const books = [
   {
     id: 1,
@@ -63,20 +64,15 @@ const books = [
   },
 ];
 
-const expected_result = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin',
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991,
-};
+const expected_result = false;
 
-function getNamedBook() {
-  const retorno = books.find((book) => book.name.length === 26);
+function everyoneWasBornOnSecXX() {
+  const retorno = books.every(
+    (elem) => elem.author.birthYear >= 1901 && elem.author.birthYear <= 2000
+  );
   return retorno;
 }
 
-assert.deepEqual(getNamedBook(), expected_result);
+// escreva seu código aqui
+
+assert.equal(everyoneWasBornOnSecXX(), expected_result);
