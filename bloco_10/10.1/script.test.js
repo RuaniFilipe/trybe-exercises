@@ -5,7 +5,7 @@ describe('soma', () => {
     expect(soma(4, 5)).toEqual(9);
     expect(soma(0, 0)).toEqual(0);
     expect(soma(2, 3)).toEqual(5);
-    expect(() => { 
-      soma(4, '5');}).toThrow('São aceitos apenas números');
+    expect(() => {soma(4, '5')}).toThrow();
+    expect(() => {soma(4, '5')}).toThrowError(new Error('São aceitos apenas números'));
 })
 });
